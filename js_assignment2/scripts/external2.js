@@ -1,0 +1,97 @@
+document.write("<h1>Array Examples</h1>")
+document.write("<strong>1.concact()</strong>")
+let arr1=["mani","uday","jagan"];
+let arr2=["madhu","gayathiri"];
+document.write("<br>")
+document.write(arr1.concat(arr2));
+document.write("<br>");
+document.write("<strong>2.copyWithin()</strong>");
+document.write("<br>");
+document.write(arr1.copyWithin(3,0));
+document.write("<br>")
+document.write("<strong>3.entries()</strong>");
+document.write("<br>");
+let b=arr1.entries();
+document.write(b.next().value);
+document.write("<br>");
+document.write("<strong>4.every()</strong>")
+document.write("<br>")
+let a=(currentValue) => currentValue<40;
+let arr3=[1,30,39,20];
+document.write(arr3.every(a));
+document.write("<br>");
+document.write("<strong>5.fill()</strong>");
+document.write("<br>");
+document.write(arr1.fill("kiwi"));
+document.write("<br>");
+document.write("<strong>6.filter()</strong>");
+document.write("<br>");
+document.write(arr2.filter(arr2 => arr2.length>6));
+document.write("<br>");
+document.write("<strong>7.find()</strong>");
+document.write("<br>");
+let arr4=[5,12,8,130,44];
+document.write(arr4.find(element => element>10));
+document.write("<br>");
+document.write("<strong>8.findIndex()</strong>");
+document.write("<br>");
+let isLarge=(element) => element>13;
+document.write(arr4.findIndex(isLarge));
+document.write("<br>");
+document.write("<strong>9.forEach()</strong>");
+document.write("<br>")
+let fruits=["apple","lemon","orange"];
+fruits.forEach(function name(params) {
+   document.write(fruits); 
+});
+document.write("<br>");
+document.write("<strong>10.from()</strong>");
+document.write("<br>");
+let c=Array.from('foo');
+document.write(c);
+document.write("<br>");
+document.write("<h1>String Methods</h1>");
+document.write("<strong>1.charAt()</strong>");
+document.write("<br>");
+let d="mani";
+document.write(d.charAt(0));
+document.write("<br>");
+document.write("<strong>2.toLowerCase()</strong>");
+document.write("<br>");
+document.write(d.toLowerCase());
+document.write("<br>");
+document.write("<strong>3.toUpperCase()</strong>");
+document.write("<br>");
+document.write(d.toUpperCase());
+document.write("<br>");
+document.write("<strong>4.endsWith()</strong>");
+document.write("<br>");
+document.write(d.endsWith('a'));
+document.write("<br>");
+document.write("<strong>5.includes()</strong>");
+document.write("<br>");
+document.write(d.includes('k'));
+document.write("<br>");
+document.write("<strong>6.indexOf()</strong>");
+document.write("<br>");
+document.write(d.indexOf('m'));
+document.write("<br>");
+document.write("<strong>7.lastIndexOf()</strong>");
+document.write("<br>");
+document.write(d.lastIndexOf('a'));
+document.write("<br>");
+document.write("<strong>8.match()</strong>");
+document.write("<br>");
+let e='Men In Black';
+const regex=/[A-Z]/i;
+document.write(e.match(regex));
+document.write("<br>");
+document.write("<strong>9.split()</strong>");
+document.write("<br>");
+document.write(d.split('a'));
+document.write("<br>");
+document.write("<strong>10.slice()</strong>");
+document.write("<br>");
+let fruits1=['banana','lemon','orange','apple'];
+document.write(fruits1.slice(2,3));
+document.write("<br>");
